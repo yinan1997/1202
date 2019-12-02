@@ -1,0 +1,234 @@
+body {
+  font-family: 'Kirang Haerang', cursive;
+  font-size: 25px;
+  font-weight: 400;
+  overflow-x: hidden;
+  background-color: #1d1d1f;
+  color: rgb(235, 204, 119);
+}
+
+a {
+  transition: all 0.3s ease;
+}
+
+a:hover,
+a:focus {
+  text-decoration: none;
+}
+
+p {
+  line-height: 1.8;
+}
+
+.tm-primary-color {
+  color: #61AEAE;
+}
+
+.tm-secondary-color {
+  color: #0099CC;
+}
+
+.page-body{display: flex;justify-content:center;}
+
+.tm-page-container {
+
+  max-width: 1200px;
+  width: 100%;  
+}
+
+.tm-section {
+  margin-bottom: 155px;
+  position: relative;
+}
+
+.tm-content-container {
+	display:flex;
+	align-items:center; 
+	justify-content:center;
+  border-radius: 20px;
+  background-color: rgb(67, 85, 102);
+}
+
+.tm-nav {
+  position: absolute;
+  right: -250px;
+  top: 45px;
+}
+
+.tm-nav > ul > li {
+  list-style: none;
+}
+
+.tm-nav > ul > li > a {
+  display: block;
+  padding: 12px 15px;
+  color: #999A9B;
+}
+
+
+.tm-nav > ul > li > a:hover,
+.tm-nav > ul > li > a:focus {
+  color: #0299CC;
+}
+
+.tm-nav-deco {
+  display: inline-block;
+  width: 20px;
+  height: 8px;
+  background-color: #999A9B;
+  vertical-align: middle;
+  margin-right: 20px;
+}
+
+
+
+.tm-nav > ul > li:hover > a > .tm-nav-deco
+ {
+  background-color: #0299CC;
+}
+
+.tm-content {  
+  padding: 55px;
+}
+
+.tm-header {
+  padding: 65px 15px;
+}
+
+.tm-title {
+  font-size: 3rem;
+  color: #626364;
+}
+
+.tm-page-title {
+  font-size: 1.5rem;
+  margin-bottom: 40px;
+  color: #656667;
+}
+
+.tm-img {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;  
+}
+
+.img{width:100%;
+	height:auto;}
+
+
+
+
+@media (max-width: 945px) {
+  .tm-nav {
+    position: static;
+  }
+
+  .tm-page-container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+
+
+
+
+
+.star {
+  background: #919191;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.glow {
+  background: white;
+  animation: glitter 10s linear 0s infinite normal;
+     -webkit-animation: glitter 10s linear 0s infinite normal;
+    -moz-animation: glitter 10s linear 0s infinite normal;
+    -ms-animation: glitter 10s linear 0s infinite normal;
+    -o-animation: glitter 10s linear 0s infinite normal;
+}
+
+.one {
+  top: 20%;
+  left: 30%;
+  animation-delay: -2s;
+}
+
+.two {
+  top: 19%;
+  left: 38%;
+  animation-delay: -1.7142857143s;
+}
+
+.three {
+  top: 15%;
+  left: 46%;
+  animation-delay: -1.4285714286s;
+}
+
+.four {
+  top: 9%;
+  left: 54%;
+  animation-delay: -1.4285714286s;
+}
+
+.five {
+  top: 12%;
+  left: 66%;
+  animation-delay: -0.8571428571s;
+}
+
+.six {
+  top: 8%;
+  left: 64%;
+  animation-delay: -0.5714285714s;
+}
+
+.seven {
+  top: 10%;
+  left: 56%;
+  animation-delay: -0.2857142857s;
+}
+
+.moon {
+  position: absolute;
+  top: 5%;
+  left: 80%;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background: #ddd;
+  box-shadow: inset 10px -10px 0 0 #b9b9b9, 0px 0px 40px 20px rgb(95, 107, 145);
+}
+
+
+
+
+
+@keyframes glitter {
+    0% {
+        transform: scale(1.0);
+        opacity: 1;
+        box-shadow: 0px 0px 10px 5px rgb(174, 179, 231);
+    }
+    25% {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    50% {
+        transform: scale(1.0);
+        opacity: 1;
+        box-shadow: 0px 0px 10px 5px rgb(195, 198, 231);
+    }
+    75% {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1.0);
+        opacity: 1;
+        box-shadow: 0px 0px 10px 5px rgb(194, 198, 240);
+    }
+}
